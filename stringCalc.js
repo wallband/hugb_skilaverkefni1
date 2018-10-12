@@ -6,6 +6,7 @@ function add (numbers){
     
     if(numbers.includes(",")) {
         var numberArray = numbers.split(",");
+            var numberArray = numbers.split(/[\n,]/g);
         return sum(numberArray);
     }
     else

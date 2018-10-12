@@ -19,3 +19,7 @@ it("should return sum of multiple numbers", () => {
 it("should return sum of multiple numbers, more than three", () => {
     expect(add("5,2,2,1")).toBe(10);
 });
+
+it("should return sum even if there is a newline symbol in string", () => {
+    expect(add("1 \n2,3")).toBe(6);
+});
