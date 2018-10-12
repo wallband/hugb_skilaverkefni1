@@ -1,12 +1,12 @@
 //String Calculator
 
 function add (number){
-    if(number == "") {
+    if(number == "") 
         return 0;
-    }
-    else {
-        return number;
-    }
+    
+    
+    return parseInt(number);
+    
 }
 
 add();
