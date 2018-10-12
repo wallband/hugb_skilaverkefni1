@@ -12,6 +12,10 @@ it("should return sum of numbers when there are two numbers in the string", () =
     expect(add("5,2")).toBe(7);
 });
 
-it("should return sum of multipler numbers", () => {
+it("should return sum of multiple numbers", () => {
     expect(add("5,2,2")).toBe(9);
+});
+
+it("should return sum of multiple numbers, more than three", () => {
+    expect(add("5,2,2,1")).toBe(10);
 });
