@@ -1,7 +1,12 @@
 //String Calculator
 
 function add (number){
-    return 0;
+    if(number == "") {
+        return 0;
+    }
+    else {
+        return number;
+    }
 }
 
 add();
