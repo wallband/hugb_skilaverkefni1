@@ -6,11 +6,7 @@ function add (numbers){
     
     if(numbers.includes(",")) {
         var numberArray = numbers.split(",");
-        var retNum = 0;
-        for(var i = 0; i < numberArray.length; i++) {
-            retNum += parseInt(numberArray[i]);
-        }
-        return retNum;
+        return sum(numberArray);
     }
     else
         return parseInt(numbers);
@@ -18,6 +14,13 @@ function add (numbers){
     
 }
 
+function sum(numArr) {
+    var retNum = 0;
+    for(var i = 0; i < numArr.length; i++) {
+        retNum += parseInt(numArr[i]);
+    }
+    return retNum;
+}
 
 
 module.exports = add;
