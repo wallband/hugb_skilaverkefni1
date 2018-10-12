@@ -1,0 +1,23 @@
+{
+  "name": "hugb_skilaverkefni1",
+  "version": "1.0.0",
+  "description": "Einstaklingsverkefni_Skilaverkefni",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wallband/hugb_skilaverkefni1.git"
+  },
+  "keywords": [
+    "Hugbúnaðarfræði",
+    "H2018"
+  ],
+  "author": "einarsve17",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wallband/hugb_skilaverkefni1/issues"
+  },
+  "homepage": "https://github.com/wallband/hugb_skilaverkefni1#readme"
+}
