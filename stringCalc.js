@@ -1,9 +1,14 @@
 //String Calculator
 
 class NoNegativesException extends Error {
-    constructor(message) {
-        super(message);
+    constructor(message, negNum) {
+        super(message, negNum);
+        this.negNumArr = negNum;
         this.name = "NoNegativesException";
+        if(negNum.includes(",")) {
+            this.negNumArr = negNum.split(",");
+                this.negNumArr = negNum.split(/[\n,]/g);
+        }
 
     }
 }
@@ -13,19 +18,21 @@ function add (numbers){
         if(numbers == "") 
             return 0;
 
-        if(parseInt(numbers) < 0) throw new NoNegativesException("Negatives are not allowed");
-
         if(numbers.includes(",")) {
             var numberArray = numbers.split(",");
                 var numberArray = numbers.split(/[\n,]/g);
             return sum(numberArray);
         }
         
-            return parseInt(numbers); 
+        if(parseInt(numbers) < 0) {
+            throw new NoNegativesException("Negatives are not allowed: ", numbers);
+        }
+        return parseInt(numbers); 
     }
     catch(err) {
         var negError = err.message;
-        return negError;
+        var retNums = err.negNumArr;
+        return negError + retNums;
     } 
 }
 
