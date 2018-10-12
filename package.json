@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/wallband/hugb_skilaverkefni1/issues"
   },
-  "homepage": "https://github.com/wallband/hugb_skilaverkefni1#readme"
+  "homepage": "https://github.com/wallband/hugb_skilaverkefni1#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
 }
